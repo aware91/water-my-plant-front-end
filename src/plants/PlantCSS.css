@@ -1,0 +1,121 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.plants {
+  /* border: 1px solid purple; */
+  margin-top: 100px;
+  margin-left: 3%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 90vw;
+  height: 100%;
+  background-image: linear-gradient(#cfd9df, #e2ebf0);
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px;
+}
+
+
+
+.plants h2 {
+  /* border: 1px solid yellow; */
+  margin: 3%;
+}
+
+.plantForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  width: 25%;
+  height: 250px;
+  margin: 0 3%;
+}
+
+.plantPost {
+  /* border: 1px solid orange; */
+  width: 100%;
+  margin: 0 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly
+}
+
+.plantCards {
+  color: solid red;
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(lightgreen, #2f793c);
+  margin: 2%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nickname {
+  color: black;
+  font-size: 4vh;
+}
+
+#species {
+  color: black;
+  font-size: 3vh;
+}
+
+#water {
+  color: black;
+  font-size: 3.5vh;
+}
+
+.edit button {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.form {
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.plantEditName {
+  font-size: 5vh;
+}
+
+.plantPost2 {
+  /* border: 1px solid blue; */
+  width: 100%;
+  margin: 0 1%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  /* width: 25%;
+  height: 250px;
+  margin: 0 3%; */
+}
+
+.editForm {
+  width: 120%;
+  height: 250px;
+  margin: 0 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

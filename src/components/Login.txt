@@ -1,0 +1,65 @@
+import React, { useState } from "react";
+import axios from "axios";
+
+function Login() {
+    const [user, setUser] = useState({
+        username: "",
+        password: "" 
+    });
+
+    const handleChange = event => {
+        setUser({ ...user, [event.target.name]: event.target.value });
+    };
+
+    const [post, setPost] = useState([]);
+
+    // const handleSubmit = event => {
+    //     event.preventDefault();
+    //     console.log(user.username);
+    //     console.log(user.password);
+    // };
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        axios
+            // .post("/auth/register", formState)
+            .post("https://plant-care-reminder.herokuapp.com/api/auth/login", user)
+            .then(res => {
+                setPost(res.data);
+                console.log("post", res.data);
+                setUser({
+                    username: "",
+                    password: ""
+                });
+            })
+            .catch(err => console.log(err.response));
+    };
+
+    return (
+        <div className="App">
+            {console.log(user)}
+            <form onSubmit={event => handleSubmit(event)}>
+                <label>
+                    Username:
+                    <input
+                        type="text"
+                        name="username"
+                        onChange={event => handleChange(event)}
+                    />
+                </label>
+                <label>
+                    Password:
+                    <input
+                        type="text"
+                        name="password"
+                        onChange={event => handleChange(event)}
+                    />
+                </label>
+                <pre>{JSON.stringify(post, null, 2)}</pre>
+                <button>Submit!</button>
+            </form>
+        </div>
+    );
+}
+
+export default Login;

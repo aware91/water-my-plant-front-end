@@ -1,0 +1,42 @@
+/* singuploginBackground*/
+
+.suliBackground {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600px;
+  height: 550px;
+  background-color: #C9CFCA;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px;
+}
+
+.suliBackground form {
+  margin-top: 35px;
+  width: 90%;
+}
+
+.inputInfo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.inputInfo input{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
